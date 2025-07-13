@@ -202,21 +202,30 @@ public class GameStateManager : MonoBehaviour
 
     private void LoadRatData()
     {
+        // Rileva se il gioco è appena partito dal menu (scena 0 → -2)
+        bool isFirstScene = SceneManager.GetActiveScene().buildIndex == 0 && ratData.health <= 0;
+
+        // Se è il primo caricamento (non da salvataggio), inizializza la vita a 100
+        if (isFirstScene)
+        {
+            ratData.health = 100;
+            ratData.speedMultiplier = 1f;
+        }
+
         // 1) Ripristina la vita
         bonusMalus.currentHealth = ratData.health;
         bonusMalus.onHealthChanged?.Invoke(ratData.health, bonusMalus.maxHealth);
 
         // 2) Ripristino power-up via flags + config
         ratInteraction.ApplyPowerUps(
-            ratData.speedActive,      // flag speed
-            ratData.speedMultiplier,  // moltiplicatore
-            ratData.speedTimeLeft,    // tempo rimanente
+            ratData.speedActive,
+            ratData.speedMultiplier,
+            ratData.speedTimeLeft,
 
-            ratData.damageActive,     // flag damage
-            ratData.damageAmount,     // quantità danno
+            ratData.damageActive,
+            ratData.damageAmount,
 
-            ratData.poisonReady       // flag pipì
+            ratData.poisonReady
         );
     }
-
 }

@@ -13640,6 +13640,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2901052cfcc6d4dfea598ab4f806612f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 424150318}
     - targetCorrespondingSourceObject: {fileID: -7591526954526779085, guid: 2901052cfcc6d4dfea598ab4f806612f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 232112160}
@@ -16216,6 +16219,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1214608809313975964, guid: 2901052cfcc6d4dfea598ab4f806612f, type: 3}
+--- !u!1 &424150317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2901052cfcc6d4dfea598ab4f806612f, type: 3}
+  m_PrefabInstance: {fileID: 351561897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &424150318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424150317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5364291faf2714a70998f4386ab3a735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthFill: {fileID: 0}
 --- !u!1001 &426176042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85555,7 +85576,7 @@ PrefabInstance:
       objectReference: {fileID: 543450653137747191}
     - target: {fileID: 4840180647165213175, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
       propertyPath: currentHealth
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4840180647165213175, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
       propertyPath: interactionManager

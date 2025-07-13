@@ -5,6 +5,7 @@ public class RatHealthUI : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField] private Image healthFill;
+    
 
     public void UpdateHealthBar(int current, int max)
     {

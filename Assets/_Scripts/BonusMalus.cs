@@ -24,6 +24,7 @@ public class BonusMalus : MonoBehaviour
     [SerializeField] private RatInputHandler inputHandler;
     [SerializeField] private RatInteractionManager interactionManager;
     [SerializeField] private Rigidbody ratRigidbody;
+    
     void Awake()
     {
         currentHealth = maxHealth;
