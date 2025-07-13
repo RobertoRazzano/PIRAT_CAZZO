@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/FLOORS/Pirats_Floor_-1.unity
     guid: ccbadeba2cf7c4cf28435706533ad353
+  - enabled: 1
+    path: Assets/_Scenes/FLOORS/Pirats_Floor_Ponte.unity
+    guid: 0ffe32484c6fb4c9084b9f058a33f820
+  - enabled: 1
+    path: Assets/_Scenes/FLOORS/Pirats_Floor_StanzaPirata.unity
+    guid: b845c2c90e4a3424aad007da4f937647
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
