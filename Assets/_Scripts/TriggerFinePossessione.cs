@@ -37,7 +37,7 @@ public class TriggerFinePossessione : MonoBehaviour
         {
             hasTriggered = false;
             promptUIManager.ShowPrompt(InputKeyType.ButtonSouth, "Return to rat with this button or BACKSPACE", true);
-            StartCoroutine(DisableAfterDelay());
+            //StartCoroutine(DisableAfterDelay());
         }
     }
 
