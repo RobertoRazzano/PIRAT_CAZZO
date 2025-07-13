@@ -36,7 +36,7 @@ public class TriggerFinePossessione : MonoBehaviour
         if (other.CompareTag("Pirate") && other.gameObject == boccaporto)
         {
             hasTriggered = false;
-            promptUIManager.ShowPrompt(InputKeyType.ButtonSouth, "Return to rat with this button or TAB", true);
+            promptUIManager.ShowPrompt(InputKeyType.ButtonSouth, "Return to rat with this button or BACKSPACE", true);
             StartCoroutine(DisableAfterDelay());
         }
     }
