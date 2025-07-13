@@ -39541,7 +39541,7 @@ MonoBehaviour:
     sightRange: 2
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
-  - revealerTransform: {fileID: 753346833}
+  - revealerTransform: {fileID: 1632743959}
     sightRange: 5
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
