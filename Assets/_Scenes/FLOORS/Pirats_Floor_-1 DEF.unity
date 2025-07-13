@@ -39403,52 +39403,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.57854676, y: 0.72141546, z: 0.59278023}
   m_Center: {x: 0.00018846989, y: 0.3780698, z: 0.0062173605}
---- !u!1 &1161311773
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1161311775}
-  - component: {fileID: 1161311774}
-  m_Layer: 0
-  m_Name: PauseController (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1161311774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161311773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb7b6b9d2dd0c4d858287e9762ee18de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  playerInput: {fileID: 0}
---- !u!4 &1161311775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161311773}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 962.98175, y: 514.78186, z: -119.416016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1164440136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71391,6 +71345,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2e5387ae52234024ada48cfaf4f6e6f, type: 3}
+--- !u!1 &1686662172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4742292472449738503, guid: f2e5387ae52234024ada48cfaf4f6e6f, type: 3}
+  m_PrefabInstance: {fileID: 1686662171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1687179062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78017,8 +77976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7b6b9d2dd0c4d858287e9762ee18de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 676594835}
-  playerInput: {fileID: 0}
+  pauseMenu: {fileID: 1686662172}
+  playerInput: {fileID: 601911430}
 --- !u!4 &1868849032
 Transform:
   m_ObjectHideFlags: 0
@@ -92301,7 +92260,6 @@ SceneRoots:
   - {fileID: 175628156}
   - {fileID: 777579897}
   - {fileID: 819345448}
-  - {fileID: 1161311775}
   - {fileID: 1868849032}
   - {fileID: 676594839}
   - {fileID: 202236976}
