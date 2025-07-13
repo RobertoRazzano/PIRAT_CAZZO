@@ -120,9 +120,7 @@ public class PossessionManager : MonoBehaviour
             oculiRiserSource.loop = false;
             oculiRiserSource.clip = oculiRiserIn;
             oculiRiserSource.Play();
-            oculiAudioSource.clip = oculiNexumAudio;
-            oculiAudioSource.loop = true;
-            oculiAudioSource.Play();
+            
         }
 
         if (oculiAudioSource != null && oculiNexumAudio != null)
