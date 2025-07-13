@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0e614db1e0d4010b97ca7da740d6f6, type: 3}
+  m_Name: DialoguePossession
+  m_EditorClassIdentifier: 
+  sequenceID: possession
+  lines:
+  - speakerName: PRISONER
+    text: WELL DONE, LITTLE ONE. NOW YOU CAN SEE THROUGH HIS EYES, IF YOU TRUST A
+      POOR PRISONER.
+  - speakerName: PRISONER
+    text: THANKS FOR HELPING ME WITH THAT HENCHMAN. OUR PATHS WILL CROSS AGAIN SOON.

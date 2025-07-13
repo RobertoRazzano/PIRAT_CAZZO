@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0e614db1e0d4010b97ca7da740d6f6, type: 3}
+  m_Name: DialogueFloor-1END
+  m_EditorClassIdentifier: 
+  sequenceID: end2
+  lines:
+  - speakerName: PRISONER
+    text: THE CAPTAIN'S ROOM IS UP HERE ON THE BRIDGE. I WOULD ADVISE YOU NOT TO
+      GO IN THROUGH THE FRONT DOOR THOUGH, THEY MIGHT SEE YOU.
+  - speakerName: PRISONER
+    text: TRY TO SEE AT THE HIGHEST PART OF THE BRIDGE, IN THE MIDDLE OF ALL THOSE
+      BARRELS, THERE SHOULD BE ONE MARKED.
+  - speakerName: PRISONER
+    text: IT SHOULD BE MORE FRAGILE THAN THE OTHERS. IF YOU GET RID OF IT, IT SHOULD
+      REVEAL A HOLE IN THE FLOOR THAT WILL TAKE YOU STRAIGHT TO THE CAPTAIN..

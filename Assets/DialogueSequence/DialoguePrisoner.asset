@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0e614db1e0d4010b97ca7da740d6f6, type: 3}
+  m_Name: DialoguePrisoner
+  m_EditorClassIdentifier: 
+  sequenceID: prisoner
+  lines:
+  - speakerName: ???
+    text: "HEY YOU, YES, I\u2019M TALKING TO YOU. LOOK AROUND!!"
+  - speakerName: ???
+    text: "COME CLOSER TO THE PRISON, I\u2019M IN HERE."
+  - speakerName: PRISONER
+    text: "I\u2019M SORRY ABOUT WHAT HAPPENED TO YOUR FRIEND. IT WAS THE CAPTAIN
+      OF THIS SHIP WHO KILLED HIM."
+  - speakerName: PRISONER
+    text: "UNLIKE US, HE\u2019S GOT A WONDERFUL ROOM ALL TO HIMSELF UP ON DECK, WHILE
+      HE LEFT US DOWN HERE TO ROT."
+  - speakerName: PRISONER
+    text: "I GUESS I\u2019M NOT THE ONLY ONE WHO\u2019D LIKE TO TEACH HIM A LESSON,
+      RIGHT? IT WON\u2019T BE EASY, THOUGH, EVERYONE ON THIS SHIP IS LOYAL TO HIM."
+  - speakerName: PRISONER
+    text: "BY THE WAY\u2026 IF THEY HAVEN\u2019T CHANGED THE ROUNDS, A GUARD SHOULD
+      BE PASSING BY IN A FEW SECONDS."
+  - speakerName: PRISONER
+    text: WHEN YOU BITE THE PIRATE, YOU CAN USE HIS BODY TO PROPEL YOURSELF BACKWARD,
+      THE MORE ACCURATE YOU ARE, THE STRONGER THE BOOST.
+  - speakerName: PRISONER
+    text: "YOU COULD TRY BITING HIM FROM BEHIND, BUT RIGHT AFTER THAT, I\u2019D ADVISE
+      YOU TO HIDE BEHIND THIS BARREL."

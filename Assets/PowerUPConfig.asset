@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fc88e549ce991478ba0565f643ba92, type: 3}
+  m_Name: PowerUPConfig
+  m_EditorClassIdentifier: 
+  speedVFXPrefab: {fileID: 1779864262545202, guid: 5a4ebcda24379dd4dba784b9693ce23f, type: 3}
+  damageVFXPrefab: {fileID: 1084983192572740, guid: 075e5130831f9304f8e5e0e2ccd2dc27, type: 3}
+  poisonPuddlePrefab: {fileID: 3781956439741579610, guid: 04af756e8e94acb4c9ab74c8ef2f4f0e, type: 3}
+  poisonVFXPrefab: {fileID: 8877596331768416466, guid: 23590b8e848e5a644ae05d8b9e003483, type: 3}
+  poisonTrapPrefabs:
+  - {fileID: 8228117490930797501, guid: fc83b8b861a0c674993b21e385367568, type: 3}
+  - {fileID: 6879533389167179289, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}

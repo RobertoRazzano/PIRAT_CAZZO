@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0e614db1e0d4010b97ca7da740d6f6, type: 3}
+  m_Name: DialogueFloor-1INTRO
+  m_EditorClassIdentifier: 
+  sequenceID: intro2
+  lines:
+  - speakerName: PRISONER
+    text: HOW LONG IT'S BEEN, LITTLE GUY. YOU'VE DONE AN INCREDIBLE JOB WITH ALL
+      THESE IMBECILES, YOU DON'T KNOW HOW MUCH YOU'VE MADE THINGS EASIER FOR ME.
+  - speakerName: PRISONER
+    text: "NOW LISTEN: ON THIS FLOOR THERE\u2019S THE PIRATE DOCTOR. HE CAN TREAT
+      THEM, BUT ONLY IN A SPECIFIC AREA OF THE SHIP."
+  - speakerName: PRISONER
+    text: "AND THEN THERE\u2019S THE TAVERN. ALWAYS FULL, ALWAYS NOISY. BE CAREFUL
+      \u2014 THEY MIGHT SEE YOU THERE.."
