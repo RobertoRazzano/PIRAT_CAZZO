@@ -7,7 +7,7 @@ public class CaptainDeathTrigger : MonoBehaviour
     [SerializeField] private PirateController captain;
     [SerializeField] private DialogueManagerPonte dialogueManager;
     [SerializeField] private PirateAutoMove pirateAutoMove;
-    private PlayableDirector director;
+    [SerializeField] private PlayableDirector director;
     private float delay = 0.5f;
 
     private bool hasTriggered = false;
