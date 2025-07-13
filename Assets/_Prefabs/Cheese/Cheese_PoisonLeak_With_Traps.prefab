@@ -137,6 +137,7 @@ MonoBehaviour:
   speedBoostClip: {fileID: 8300000, guid: 34eb2f53c573b4ab7ab4cf4ca620965f, type: 3}
   damageBoostClip: {fileID: 8300000, guid: 872b42628466b48bb9206f35c84290a1, type: 3}
   poisonLeakClip: {fileID: 8300000, guid: 7836296eded3747ec9f5c64678cb74c0, type: 3}
+  tutorialDialogueSequence: {fileID: 0}
   outlineMaterial: {fileID: 2100000, guid: 51c87f0b09c90e0458fac2f80e3cd8da, type: 2}
   triggerCollider: {fileID: 6947529649687309658}
   playerTag: Player
@@ -211,7 +212,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0

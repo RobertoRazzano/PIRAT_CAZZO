@@ -4248,11 +4248,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepClip: {fileID: 8300000, guid: 739273a79c32b499483ef36e2b9d2f0d, type: 3}
   footstepVolume: 0.7
-  biteClip: {fileID: 0}
+  biteClip: {fileID: 8300000, guid: cc6144a4a579341f5abdbdc284dd9f8d, type: 3}
   biteVolume: 0.8
+  biteWithJumpBackClip: {fileID: 8300000, guid: 9e09b8c7819c9476fb40bbb86c5c0c5e, type: 3}
+  biteWithJumpBackVolume: 0.8
+  backflipClip: {fileID: 8300000, guid: 52ed201b74b8f4803a0b33dcdf0eb03a, type: 3}
+  backflipVolume: 0.8
   walkingStateName: WalkRatAnimation
-  biteStateName1: 
-  biteStateName2: BiteWithJumpBack
+  biteStateName: Bite
+  biteWithJumpBackStateName: BiteWithJumpBack
+  backflipStateName: Backflip
 --- !u!81 &4869895336407541505
 AudioListener:
   m_ObjectHideFlags: 0

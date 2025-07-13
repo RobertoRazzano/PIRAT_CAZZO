@@ -9,16 +9,23 @@ public class RatAudioControllerByAnimator : MonoBehaviour
     public AudioClip biteClip;
     [Range(0f, 1f)] public float biteVolume = 0.8f;
 
+    public AudioClip biteWithJumpBackClip;
+    [Range(0f, 1f)] public float biteWithJumpBackVolume = 0.8f;
+
+    public AudioClip backflipClip;
+    [Range(0f, 1f)] public float backflipVolume = 0.8f;
+
     [Header("Animator States")]
     public string walkingStateName = "WalkRatAnimation";
-    public string biteStateName1 = "Bite";
-    public string biteStateName2 = "BiteWithJumpBack";
+    public string biteStateName = "Bite";
+    public string biteWithJumpBackStateName = "BiteWithJumpBack";
+    public string backflipStateName = "Backflip";
 
     private Animator animator;
     private AudioSource audioSource;
 
     private bool isWalking = false;
-    private bool bitePlayed = false;
+    private bool actionSoundPlayed = false;
 
     void Start()
     {
@@ -39,12 +46,9 @@ public class RatAudioControllerByAnimator : MonoBehaviour
     void Update()
     {
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        string currentState = stateInfo.IsName(walkingStateName) ? walkingStateName :
-                              stateInfo.IsName(biteStateName1) ? biteStateName1 :
-                              stateInfo.IsName(biteStateName2) ? biteStateName2 : "";
 
         // --- Passi ---
-        if (currentState == walkingStateName)
+        if (stateInfo.IsName(walkingStateName))
         {
             if (!isWalking && footstepClip != null)
             {
@@ -64,19 +68,37 @@ public class RatAudioControllerByAnimator : MonoBehaviour
             }
         }
 
-        // --- Morso (in uno dei due stati previsti) ---
-        if (stateInfo.IsName(biteStateName2)) // Solo BITE con salto all'indietro
+        // --- Azioni con suoni singoli ---
+        if (stateInfo.IsName(biteWithJumpBackStateName))
         {
-            if (!bitePlayed && biteClip != null)
+            if (!actionSoundPlayed && biteWithJumpBackClip != null)
+            {
+                audioSource.loop = false;
+                audioSource.PlayOneShot(biteWithJumpBackClip, biteWithJumpBackVolume);
+                actionSoundPlayed = true;
+            }
+        }
+        else if (stateInfo.IsName(biteStateName))
+        {
+            if (!actionSoundPlayed && biteClip != null)
             {
                 audioSource.loop = false;
                 audioSource.PlayOneShot(biteClip, biteVolume);
-                bitePlayed = true;
+                actionSoundPlayed = true;
+            }
+        }
+        else if (stateInfo.IsName(backflipStateName))
+        {
+            if (!actionSoundPlayed && backflipClip != null)
+            {
+                audioSource.loop = false;
+                audioSource.PlayOneShot(backflipClip, backflipVolume);
+                actionSoundPlayed = true;
             }
         }
         else
         {
-            bitePlayed = false;
+            actionSoundPlayed = false;
         }
-            }
+    }
 }
