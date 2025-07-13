@@ -156,7 +156,7 @@ public class DialogueManager : MonoBehaviour
             {
                 case 0:
                     possessionManager.EnablePossessionInput(true);
-                    promptUIManager.ShowPrompt(InputKeyType.LeftTrigger, "Enter in selection mode with left trigger or CANC", true);
+                    promptUIManager.ShowPrompt(InputKeyType.LeftTrigger, "Enter in selection mode with left trigger or TAB", true);
                     StartCoroutine(WaitForSelectionMode());
                     break;
             }
