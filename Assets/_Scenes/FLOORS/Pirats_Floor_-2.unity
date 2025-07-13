@@ -53805,6 +53805,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4946650897095073872, guid: cd3eff4a19b484dfdabfa0a818d7ada3, type: 3}
   m_PrefabInstance: {fileID: 1482246189}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467609466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467609465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef97745ce41e43fe809f13bdc695135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 1560643402}
+  exitPoint: {fileID: 906858460}
+  prisonerTrigger: {fileID: 928454576}
 --- !u!4 &1467680928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e5aef63b3ac347b2a8f9b113627692b, type: 3}
@@ -54863,7 +54878,10 @@ PrefabInstance:
     - {fileID: 2980841914667365307, guid: cd3eff4a19b484dfdabfa0a818d7ada3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4946650897095073872, guid: cd3eff4a19b484dfdabfa0a818d7ada3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467609466}
   m_SourcePrefab: {fileID: 100100000, guid: cd3eff4a19b484dfdabfa0a818d7ada3, type: 3}
 --- !u!1 &1486260078 stripped
 GameObject:
