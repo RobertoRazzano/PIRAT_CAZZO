@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -203,7 +203,7 @@ public class GameStateManager : MonoBehaviour
     private void LoadRatData()
     {
         // Rileva se il gioco è appena partito dal menu (scena 0 → -2)
-        bool isFirstScene = SceneManager.GetActiveScene().buildIndex == 0 && ratData.health <= 0;
+        bool isFirstScene = SceneManager.GetActiveScene().buildIndex == 1 && ratData.health <= 0;
 
         // Se è il primo caricamento (non da salvataggio), inizializza la vita a 100
         if (isFirstScene)

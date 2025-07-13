@@ -5,7 +5,7 @@ public class MenuController : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(0); // Sostituisci con il nome o l’indice della scena se necessario
+        SceneManager.LoadScene(1); // Sostituisci con il nome o l’indice della scena se necessario
     }
 
     public void QuitGame()
