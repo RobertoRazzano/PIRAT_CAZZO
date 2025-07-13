@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class PauseController : MonoBehaviour
 {
 
     public GameObject pauseMenu; // Assicurati che questo oggetto sia assegnato nell'Inspector
+
+    private InputAction exitMenu;
+    [SerializeField] private PlayerInput playerInput;
 
 
 
@@ -21,13 +25,12 @@ public class PauseController : MonoBehaviour
         {
             Debug.LogError("PauseController: pauseMenu is not set!");
         }
-
-        
+        exitMenu = playerInput.actions["ExitMenu"];
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (exitMenu.triggered && Time.timeScale != 0)
         {
             pauseGame();
 
