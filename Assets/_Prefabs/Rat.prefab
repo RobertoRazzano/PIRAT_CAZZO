@@ -4143,7 +4143,7 @@ MonoBehaviour:
   oculiRiserSource: {fileID: 3626624972988535115}
   oculiRiserIn: {fileID: 8300000, guid: d33738dfcce2f4d6fb2763769145ad67, type: 3}
   oculiRiserOut: {fileID: 8300000, guid: 24e9b72a78d2d49049c4739bf477059c, type: 3}
-  oculiNexumAudio: {fileID: 8300000, guid: 854178809fd014615936430ef14c511d, type: 3}
+  oculiNexumAudio: {fileID: 8300000, guid: 59898b768d4ba425bada350b10f2321b, type: 3}
 --- !u!82 &6928670289825289632
 AudioSource:
   m_ObjectHideFlags: 0
