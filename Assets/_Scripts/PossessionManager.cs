@@ -46,6 +46,14 @@ public class PossessionManager : MonoBehaviour
     public Color defaultColor;
     public Color selectedColor;
 
+    [Header("OculiSound")]
+    [SerializeField] private AudioSource oculiAudioSource;
+    [SerializeField] private AudioSource oculiRiserSource;
+
+    [SerializeField] private AudioClip oculiRiserIn;
+    [SerializeField] private AudioClip oculiRiserOut;
+    [SerializeField] private AudioClip oculiNexumAudio;
+
     void Start()
     {
         if (cameraManager != null)
@@ -105,6 +113,22 @@ public class PossessionManager : MonoBehaviour
         }
 
         currentState = PossessionState.Selecting;
+
+        // 🎵 Play audio quando si entra in modalità Selecting
+        if (oculiRiserSource != null && oculiRiserIn != null)
+        {
+            oculiRiserSource.loop = false;
+            oculiRiserSource.clip = oculiRiserIn;
+            oculiRiserSource.Play();
+        }
+
+        if (oculiAudioSource != null && oculiNexumAudio != null)
+        {
+            oculiAudioSource.clip = oculiNexumAudio;
+            oculiAudioSource.loop = true;
+            oculiAudioSource.Play();
+        }
+
         // zoom out camera per vedere tutti gli strands del topo
         cameraManager.ApplySelectionZoom();
 
@@ -203,6 +227,20 @@ public class PossessionManager : MonoBehaviour
         if (currentState == PossessionState.Selecting)
         {
             currentState = PossessionState.Idle;
+
+            // 🎵 Play uscita e stop loop
+            if (oculiRiserSource != null && oculiRiserOut != null)
+            {
+                oculiRiserSource.loop = false;
+                oculiRiserSource.clip = oculiRiserOut;
+                oculiRiserSource.Play();
+            }
+
+            if (oculiAudioSource != null)
+            {
+                oculiAudioSource.Stop();
+                oculiAudioSource.loop = false;
+            }
 
             if (ratInput != null)
             {
