@@ -22,7 +22,7 @@ public class RatAudioControllerByAnimator : MonoBehaviour
     public string backflipStateName = "Backflip";
 
     private Animator animator;
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
 
     private bool isWalking = false;
     private bool actionSoundPlayed = false;
@@ -30,7 +30,6 @@ public class RatAudioControllerByAnimator : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
 
         if (audioSource == null)
         {
