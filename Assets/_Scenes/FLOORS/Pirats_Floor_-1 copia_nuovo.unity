@@ -14481,7 +14481,7 @@ Transform:
   m_GameObject: {fileID: 412985278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.85, y: -1.6145945, z: 28.73}
+  m_LocalPosition: {x: 8.01, y: -1.6145945, z: 30.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22561,7 +22561,7 @@ Transform:
   m_GameObject: {fileID: 648727736}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.02, y: -1.6145945, z: 20.47}
+  m_LocalPosition: {x: -5.3, y: -1.6145945, z: 7.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27372,6 +27372,135 @@ MonoBehaviour:
   targetImage: {fileID: 1165603959}
   duration: 1.7
   tutorialMode: 0
+--- !u!1 &777579895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777579897}
+  - component: {fileID: 777579896}
+  m_Layer: 0
+  m_Name: Ambientale Ovattato Livelli Dentro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &777579896
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777579895}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1afd2aada1e654818bac8934a921c1d8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1afd2aada1e654818bac8934a921c1d8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.043
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &777579897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777579895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &780336997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91d2cd11ed74c42bfa5fe3bb0bc221b9, type: 3}
@@ -30419,7 +30548,7 @@ Transform:
   m_GameObject: {fileID: 876856748}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.71, y: -1.6145945, z: 22.77}
+  m_LocalPosition: {x: 6.12, y: -1.6145945, z: 24.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30591,7 +30720,7 @@ Transform:
   m_GameObject: {fileID: 883633673}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.226, y: -1.6145945, z: 19.213}
+  m_LocalPosition: {x: 14.55, y: -1.6145945, z: 19.213}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53107,7 +53236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3746181824080353862, guid: 712f6425f8ce54246a241e8ed384bea0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3905278130634303483, guid: 712f6425f8ce54246a241e8ed384bea0, type: 3}
       propertyPath: m_Layer
@@ -58315,7 +58444,7 @@ Transform:
   m_GameObject: {fileID: 1625021602}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.67, y: -1.6145945, z: 22.53}
+  m_LocalPosition: {x: 18.36, y: -1.6145945, z: 24.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87727,11 +87856,23 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7399275269632119633, guid: cff631e6ef8624e45a4a08c46f7e6325, type: 3}
+      propertyPath: patrolWaitTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399275269632119633, guid: cff631e6ef8624e45a4a08c46f7e6325, type: 3}
+      propertyPath: patrolPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399275269632119633, guid: cff631e6ef8624e45a4a08c46f7e6325, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
       objectReference: {fileID: 1041448363}
     - target: {fileID: 7399275269632119633, guid: cff631e6ef8624e45a4a08c46f7e6325, type: 3}
       propertyPath: 'patrolPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 580445262}
+    - target: {fileID: 7399275269632119633, guid: cff631e6ef8624e45a4a08c46f7e6325, type: 3}
+      propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 580445262}
     - target: {fileID: 7409781769709721770, guid: cff631e6ef8624e45a4a08c46f7e6325, type: 3}
@@ -90626,6 +90767,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1795991264967759026, guid: 583df6ca9f7a44f979e0750298b5757e, type: 3}
+      propertyPath: patrolWaitTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795991264967759026, guid: 583df6ca9f7a44f979e0750298b5757e, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -91322,3 +91467,4 @@ SceneRoots:
   - {fileID: 424842412}
   - {fileID: 268085613}
   - {fileID: 175628156}
+  - {fileID: 777579897}

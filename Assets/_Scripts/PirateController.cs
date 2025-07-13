@@ -207,7 +207,11 @@ public class PirateController : MonoBehaviour
 
         if (isWaiting)
         {
+            //Debug.log($"{name} sta aspettando al punto {patrolIdx} per {waitTimer}/{patrolWaitTime} secondi");
+            animator.SetBool("isWalking", false); // ferma l'animazione camminata
+
             waitTimer += Time.deltaTime;
+
             if (waitTimer >= patrolWaitTime)
             {
                 isWaiting = false;
@@ -217,8 +221,9 @@ public class PirateController : MonoBehaviour
                 patrolIdx = (patrolIdx + 1) % patrolPoints.Length;
                 agent.SetDestination(patrolPoints[patrolIdx].position);
 
-                animator.SetBool("Walk", true); // riparte animazione camminata
+                animator.SetBool("isWalking", true); // riparte animazione camminata
             }
+
             return;
         }
 
@@ -229,7 +234,7 @@ public class PirateController : MonoBehaviour
             waitTimer = 0f;
 
             agent.ResetPath(); // ferma il movimento
-            animator.SetBool("Walk", false); // ferma l’animazione
+            animator.SetBool("isWalking", false); // ferma l’animazione
         }
     }
 
