@@ -4057,7 +4057,7 @@ MonoBehaviour:
   biting: 0
   infectedPirates: []
   isBackflipping: 0
-  allowBite: 1
+  allowBite: 0
 --- !u!114 &4840180647165213175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4142,7 +4142,7 @@ MonoBehaviour:
   oculiAudioSource: {fileID: 6508486190550590230}
   oculiRiserSource: {fileID: 3626624972988535115}
   oculiRiserIn: {fileID: 8300000, guid: d33738dfcce2f4d6fb2763769145ad67, type: 3}
-  oculiRiserOut: {fileID: 8300000, guid: 24e9b72a78d2d49049c4739bf477059c, type: 3}
+  oculiRiserOut: {fileID: 8300000, guid: 90688529dd4c44c1ba7d0203469d30f6, type: 3}
   oculiNexumAudio: {fileID: 8300000, guid: 59898b768d4ba425bada350b10f2321b, type: 3}
 --- !u!82 &6928670289825289632
 AudioSource:

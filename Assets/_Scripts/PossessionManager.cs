@@ -254,6 +254,20 @@ public class PossessionManager : MonoBehaviour
             SetEyesActive(p, false); // 👈 aggiungi questa riga
         }
 
+        // 🎵 Play uscita e stop loop
+        if (oculiRiserSource != null && oculiRiserOut != null)
+        {
+            oculiRiserSource.loop = false;
+            oculiRiserSource.clip = oculiRiserOut;
+            oculiRiserSource.Play();
+        }
+
+        if (oculiAudioSource != null)
+        {
+            oculiAudioSource.Stop();
+            oculiAudioSource.loop = false;
+        }
+
         cameraManager.SwitchToRat();
 
         if (ratInput != null)
@@ -268,19 +282,7 @@ public class PossessionManager : MonoBehaviour
         currentState = PossessionState.Idle;
         canSwitchBackToRat = false;
 
-        // 🎵 Play uscita e stop loop
-        if (oculiRiserSource != null && oculiRiserOut != null)
-        {
-            oculiRiserSource.loop = false;
-            oculiRiserSource.clip = oculiRiserOut;
-            oculiRiserSource.Play();
-        }
-
-        if (oculiAudioSource != null)
-        {
-            oculiAudioSource.Stop();
-            oculiAudioSource.loop = false;
-        }
+        
 
 
         Invoke(nameof(EnableSwitchBack), 0.2f);
