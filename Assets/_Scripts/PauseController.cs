@@ -8,7 +8,7 @@ public class PauseController : MonoBehaviour
 {
 
     public GameObject pauseMenu; // Assicurati che questo oggetto sia assegnato nell'Inspector
-    public GameObject point; // Assicurati che questo oggetto sia assegnato nell'Inspector
+
 
 
     void Start()
@@ -22,10 +22,7 @@ public class PauseController : MonoBehaviour
             Debug.LogError("PauseController: pauseMenu is not set!");
         }
 
-        if (point == null)
-        {
-            Debug.LogError("PauseController: point is not set!");
-        }
+        
     }
 
     void Update()
@@ -33,10 +30,7 @@ public class PauseController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseGame();
-            if (point != null)
-            {
-                point.SetActive(false);
-            }
+
         }
     }
 
@@ -47,10 +41,7 @@ public class PauseController : MonoBehaviour
         {
             pauseMenu.SetActive(false);
         }
-        if (point != null)
-        {
-            point.SetActive(true);
-        }
+        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
