@@ -11494,6 +11494,7 @@ MonoBehaviour:
   playerInput: {fileID: 543450653137747187}
   possessionManager: {fileID: 543450653137747183}
   boccaporto: {fileID: 1632743951}
+  delay: 2
 --- !u!65 &293184518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72943,7 +72944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: -255}
+  m_AnchoredPosition: {x: 4, y: -310}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1816754677

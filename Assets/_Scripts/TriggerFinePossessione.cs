@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class TriggerFinePossessione : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class TriggerFinePossessione : MonoBehaviour
     private bool firstTime = true;
     public PossessionManager possessionManager;
     public GameObject boccaporto;
+    [SerializeField] private float delay = 2f;
 
     void Start()
     {
@@ -34,7 +36,14 @@ public class TriggerFinePossessione : MonoBehaviour
         if (other.CompareTag("Pirate") && other.gameObject == boccaporto)
         {
             hasTriggered = false;
-            promptUIManager.ShowPrompt(InputKeyType.ButtonSouth, "Return to rat with this button or ESCAPE", true);
+            promptUIManager.ShowPrompt(InputKeyType.ButtonSouth, "Return to rat with this button or TAB", true);
+            StartCoroutine(DisableAfterDelay());
         }
+    }
+
+    private IEnumerator DisableAfterDelay()
+    {
+        yield return new WaitForSeconds(delay);
+        boccaporto.SetActive(false);
     }
 }
