@@ -3673,6 +3673,7 @@ GameObject:
   - component: {fileID: 4434297207494486838}
   - component: {fileID: 6928670289825289632}
   - component: {fileID: -6591389148822527722}
+  - component: {fileID: 6249526551926551721}
   m_Layer: 8
   m_Name: Rat
   m_TagString: Player
@@ -4252,6 +4253,14 @@ MonoBehaviour:
   walkingStateName: WalkRatAnimation
   biteStateName1: 
   biteStateName2: BiteWithJumpBack
+--- !u!81 &6249526551926551721
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452103283487795676}
+  m_Enabled: 1
 --- !u!1 &8717209134903833235
 GameObject:
   m_ObjectHideFlags: 0

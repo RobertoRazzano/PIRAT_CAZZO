@@ -45,6 +45,9 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private GameObject tutorial;
 
+    [SerializeField] private AudioSource morteTopoAudioSource;
+    [Range(0f, 1f)] public float morteTopoVolume = 1f;
+
     public void ForceRightBoxOnly(bool value)
     {
         forceRightBoxOnly = value;
@@ -166,6 +169,13 @@ public class DialogueManager : MonoBehaviour
             {
                 case 0:
                     promptUIManager.ShowPrompt(InputKeyType.ButtonEast, "Continue with this botton or ENTER", true);
+                    break;
+                case 3:
+                    if (morteTopoAudioSource != null)
+                        {
+                            morteTopoAudioSource.volume = morteTopoVolume;
+                            morteTopoAudioSource.Play();
+                        }
                     break;
             }
         }
