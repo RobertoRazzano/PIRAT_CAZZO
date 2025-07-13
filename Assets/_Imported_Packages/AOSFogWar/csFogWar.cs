@@ -329,14 +329,14 @@ namespace FischlWorks_FogWar
                     // Pirati = sightRange 8
                     typeof(csFogWar.FogRevealer)
                         .GetField("sightRange", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                        ?.SetValue(revealer, 8);
+                        ?.SetValue(revealer, 2);
                 }
                 else
                 {
                     // Altri (topi?) = sightRange 2
                     typeof(csFogWar.FogRevealer)
                         .GetField("sightRange", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                        ?.SetValue(revealer, 2);
+                        ?.SetValue(revealer, 1);
                 }
             }
 
