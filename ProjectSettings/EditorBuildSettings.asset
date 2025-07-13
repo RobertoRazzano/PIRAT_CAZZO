@@ -17,13 +17,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/FLOORS/LORE/Pirats_Floor_-1Trailer.unity
     guid: 0f376550226d044c3944dcb69911eecb
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/FLOORS/Pirats_Floor_-2.unity
     guid: dc5552b8bc01542b7945a62a4e9be24e
+  - enabled: 1
+    path: Assets/_Scenes/FLOORS/Pirats_Floor_-2 _DEF.unity
+    guid: 362814ce6439b46dc84d5fa5f62ddaa8
   - enabled: 0
     path: Assets/_Scenes/FLOORS/Pirats_Floor_-1.unity
     guid: ccbadeba2cf7c4cf28435706533ad353
   - enabled: 1
+    path: Assets/_Scenes/FLOORS/Pirats_Floor_-1 DEF.unity
+    guid: c2a74f570631341c7b495a923079938f
+  - enabled: 0
     path: Assets/_Scenes/FLOORS/Pirats_Floor_-1 copia_nuovo.unity
     guid: 2edd2d34e14034a65a8a9d6130925673
   - enabled: 1
