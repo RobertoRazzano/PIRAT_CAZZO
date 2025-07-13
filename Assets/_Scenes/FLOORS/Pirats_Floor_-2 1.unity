@@ -53742,6 +53742,7 @@ MonoBehaviour:
   dialogueManager: {fileID: 1560643402}
   exitPoint: {fileID: 906858460}
   prisonerTrigger: {fileID: 928454576}
+  footstepClip: {fileID: 0}
 --- !u!4 &1467680928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e5aef63b3ac347b2a8f9b113627692b, type: 3}
@@ -57479,6 +57480,8 @@ MonoBehaviour:
   possessionManager: {fileID: 543450653137747183}
   ratInteractionManager: {fileID: 543450653137747182}
   tutorial: {fileID: 1960151306}
+  morteTopoAudioSource: {fileID: 0}
+  morteTopoVolume: 1
 --- !u!1001 &1561452890
 PrefabInstance:
   m_ObjectHideFlags: 0

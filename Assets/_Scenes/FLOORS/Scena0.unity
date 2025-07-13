@@ -730,6 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066255772}
   - component: {fileID: 1066255771}
+  - component: {fileID: 1066255773}
   m_Layer: 0
   m_Name: playManager
   m_TagString: Untagged
@@ -764,6 +765,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1066255773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066255770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ffd97aa482427498177f719c0afb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastSceneName: 
+  bonusMalus: {fileID: 0}
+  ratInputHandler: {fileID: 0}
+  ratInteraction: {fileID: 0}
+  powerUpConfig: {fileID: 0}
+  tutorial: {fileID: 0}
+  dialogueManager: {fileID: 0}
+  spawnPointTag: SpawnPoint
 --- !u!1 &1229864153
 GameObject:
   m_ObjectHideFlags: 0
