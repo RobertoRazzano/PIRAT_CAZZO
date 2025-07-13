@@ -23,6 +23,7 @@ public class PirateController : MonoBehaviour
     [SerializeField] private Transform ratTransform;
     [SerializeField] private RatInteractionManager ratManager;
     [SerializeField] private BonusMalus ratHealt;
+    [SerializeField] private float minDistanceFromRat = 1.0f; // distanza minima per fermarsi dal ratto
 
     [Header("Sight")]
     [SerializeField] private float viewDistance = 10f;
@@ -131,6 +132,24 @@ public class PirateController : MonoBehaviour
         if (_isDead)
         {
             return;
+        }
+
+        if (ratHealt.currentHealth == 0f)
+        {
+            state = State.Patrol; // Se il ratto è morto, torna in pattugliamento
+        }
+        
+        float distanceToRat = Vector3.Distance(transform.position, ratTransform.position);
+
+        bool shouldStop = distanceToRat < minDistanceFromRat;
+        if (agent.isStopped != shouldStop)
+        {
+            agent.isStopped = shouldStop;
+
+            if (!shouldStop && state == State.Chasing)
+            {
+                agent.SetDestination(ratTransform.position);
+            }
         }
 
         switch (state)
@@ -536,13 +555,15 @@ public class PirateController : MonoBehaviour
         healthFill.fillAmount = currentHealth / maxHealth;
         
         if (damageVFXPrefab != null)
-
         {
             GameObject vfx = Instantiate(
                 damageVFXPrefab,
                 transform.position + Vector3.up * 1.2f,
                 Quaternion.identity
             );
+
+            vfx.transform.SetParent(transform); // lo segue
+            vfx.transform.localScale = Vector3.one * 0.5f; // riduci scala
 
             Destroy(vfx, 2f);
         }

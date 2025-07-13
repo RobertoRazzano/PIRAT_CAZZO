@@ -127,7 +127,7 @@ public class BonusMalus : MonoBehaviour
             );
         }
 
-
+        if (animator == null) Debug.LogError("Animator non assegnato!");
         // Salva il nome della scena PRIMA di ricaricarla. Questo è corretto.
         GameStateManager.Instance.lastSceneName = SceneManager.GetActiveScene().name;
 
