@@ -8068,6 +8068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal (4)
@@ -16278,6 +16282,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal (2)
@@ -18553,6 +18561,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal (1)
@@ -26177,6 +26189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal
@@ -30637,6 +30653,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 175628156}
     m_Modifications:
+    - target: {fileID: 1187590165313875103, guid: e36db95f2636b104286d474b9608ad69, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 1421875710997342898, guid: e36db95f2636b104286d474b9608ad69, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.85059994
@@ -32917,6 +32937,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal
@@ -40132,6 +40156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2366082616186448776, guid: f309d15f76bdf224184ba3463f028576, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: f309d15f76bdf224184ba3463f028576, type: 3}
       propertyPath: m_Name
       value: Cheese_SpeedBoost (2)
@@ -41716,6 +41744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2366082616186448776, guid: f309d15f76bdf224184ba3463f028576, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: f309d15f76bdf224184ba3463f028576, type: 3}
       propertyPath: m_Name
       value: Cheese_SpeedBoost
@@ -46720,6 +46752,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 175628156}
     m_Modifications:
+    - target: {fileID: 1187590165313875103, guid: e36db95f2636b104286d474b9608ad69, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 1421875710997342898, guid: e36db95f2636b104286d474b9608ad69, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.85059994
@@ -51417,6 +51453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2366082616186448776, guid: f309d15f76bdf224184ba3463f028576, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: f309d15f76bdf224184ba3463f028576, type: 3}
       propertyPath: m_Name
       value: Cheese_SpeedBoost (3)
@@ -57072,6 +57112,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal (5)
@@ -70952,6 +70996,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 175628156}
     m_Modifications:
+    - target: {fileID: 1187590165313875103, guid: e36db95f2636b104286d474b9608ad69, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 1421875710997342898, guid: e36db95f2636b104286d474b9608ad69, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.85059994
@@ -71901,6 +71949,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2366082616186448776, guid: f309d15f76bdf224184ba3463f028576, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: f309d15f76bdf224184ba3463f028576, type: 3}
       propertyPath: m_Name
       value: Cheese_SpeedBoost (1)
@@ -78038,6 +78090,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5568333173702013316, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 1863291204}
     - target: {fileID: 8690275320204957918, guid: c6dee7d34d123404b8b049dc19c2d36c, type: 3}
       propertyPath: m_Name
       value: Cheese_Heal (3)
