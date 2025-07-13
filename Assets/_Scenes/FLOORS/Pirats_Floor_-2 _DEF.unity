@@ -39541,7 +39541,7 @@ MonoBehaviour:
     sightRange: 2
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
-  - revealerTransform: {fileID: 1832333217}
+  - revealerTransform: {fileID: 753346833}
     sightRange: 5
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
@@ -39550,6 +39550,18 @@ MonoBehaviour:
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
   - revealerTransform: {fileID: 1632743959}
+    sightRange: 5
+    updateOnlyOnMove: 0
+    lastSeenAt: {x: 0, y: 0}
+  - revealerTransform: {fileID: 1187236338}
+    sightRange: 5
+    updateOnlyOnMove: 0
+    lastSeenAt: {x: 0, y: 0}
+  - revealerTransform: {fileID: 123314726}
+    sightRange: 5
+    updateOnlyOnMove: 0
+    lastSeenAt: {x: 0, y: 0}
+  - revealerTransform: {fileID: 1106481237}
     sightRange: 5
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
