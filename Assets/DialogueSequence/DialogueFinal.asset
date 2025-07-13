@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0e614db1e0d4010b97ca7da740d6f6, type: 3}
   m_Name: DialogueFinal
   m_EditorClassIdentifier: 
-  sequenceID: intro
+  sequenceID: final
   lines:
-  - speakerName: ???
-    text: IT WAS ABOUT TIME WE PUT AND AN END TO THIS STORY
-  - speakerName: ???
-    text: YOU DON'T THINK YOU'RE GOING TO FIX EVERYTHING BY LEAVING ME IN HERE, DO
-      YOU? YOU DON'T HAVE THE GUTS FOR THIS JOB
-  - speakerName: ???
-    text: "WE\u2019LL SEE. UNTIL WE REACH THE PORT, GET USED TO STAYING IN HERE"
-  - speakerName: ???
-    text: YOU KNOW YOU'RE INSANE. YOU'LL END UP THE SAME WAY
+  - speakerName: PRISONER
+    text: BUT LOOK AT THAT.
+  - speakerName: CAPTAIN
+    text: DAMN FOOL, I HAD LEFT YOU CRUSHING THAT RAT IN THE DUNGEON.
+  - speakerName: PRISONER
+    text: WELL, MANIPULATING THEM HAS ALWAYS BEEN EASY AND YOU HAVE NO IDEA HOW USEFUL
+      THEY CAN BE. RATHER, DID YOU ENJOY THIS TASTE OF LIFE AS A CAPTAIN? VACATION'S
+      OVER, ROOKIE. GIVE ME BACK MY SHIP.

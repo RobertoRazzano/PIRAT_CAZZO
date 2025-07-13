@@ -48,10 +48,7 @@ public class DialogueManagerPonte : MonoBehaviour
         waitingForEndConfirmation = false;
 
         currentIndex = 0;
-        currentSequence = sequence; // 👈 AGGIUNGI QUESTA RIGA
-
-        leftDialogueBox.SetActive(false);
-        rightDialogueBox.SetActive(false);
+        currentSequence = sequence; 
 
         ShowNextLine();
     }
@@ -74,14 +71,21 @@ public class DialogueManagerPonte : MonoBehaviour
 
         if (showLeft)
         {
+            leftDialogueBox.SetActive(true);
+            rightDialogueBox.SetActive(false);
+
             leftSpeakerText.text = line.speakerName;
             leftDialogueText.text = line.text;
         }
         else
         {
+            rightDialogueBox.SetActive(true);
+            leftDialogueBox.SetActive(false);
+
             rightSpeakerText.text = line.speakerName;
             rightDialogueText.text = line.text;
         }
+
 
         currentIndex++;
     }

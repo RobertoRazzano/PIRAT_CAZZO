@@ -75,6 +75,8 @@ public class PirateController : MonoBehaviour
     [Header("Death VFX")]
     [SerializeField] private GameObject deathVFXPrefab;
 
+    public event Action OnDeathAnimationEndEvent;
+
 
     // STATI INTERNI 
     private Coroutine infectionCoroutine;
@@ -687,12 +689,16 @@ public class PirateController : MonoBehaviour
         }
     }
 
-    public void OnDeathAnimationEnd()
+        public void OnDeathAnimationEnd()
     {
         Debug.Log("Animazione di morte terminata per " + gameObject.name);
-        // Qui puoi aggiungere logica per rimuovere il pirata dalla scena o gestire la sua morte
-        DestroyAfterDelay(3.0f); // Per esempio, distruggi il GameObject
+
+        // 🔔 Notifica gli ascoltatori
+        OnDeathAnimationEndEvent?.Invoke();
+
+        DestroyAfterDelay(3.0f);
     }
+
 
     private IEnumerator DestroyAfterDelay(float delay)
     {

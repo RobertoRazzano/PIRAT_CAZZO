@@ -2,24 +2,46 @@ using UnityEngine;
 
 public class CaptainDeathTrigger : MonoBehaviour
 {
+    [Header("Riferimenti")]
     [SerializeField] private PirateController captain;
     [SerializeField] private DialogueManagerPonte dialogueManager;
+    [SerializeField] private PirateAutoMove pirateAutoMove;
+
+    private bool hasTriggered = false;
 
     void Start()
     {
         if (captain != null)
-            captain.OnPirateDeath += HandleCaptainDeath;
+        {
+            // Iscrizione all'evento che scatta quando l'animazione di morte finisce
+            captain.OnDeathAnimationEndEvent += HandleDeathAnimationEnd;
+        }
     }
 
-    private void HandleCaptainDeath(PirateController deadPirate)
+    private void HandleDeathAnimationEnd()
     {
-        Debug.Log("💀 Capitano è morto, avvio dialogo.");
-        dialogueManager.StartDialogue(dialogueManager.GetFinalDialogue()); // o un metodo dedicato
+        if (hasTriggered) return;
+        hasTriggered = true;
+
+        Debug.Log("💀 Animazione di morte del Capitano completata → Avvio dialogo");
+
+        if (dialogueManager != null)
+        {
+            dialogueManager.StartDialogue(dialogueManager.GetFinalDialogue());
+        }
+        else
+        {
+            Debug.LogWarning("❗ DialogueManager non assegnato in CaptainDeathTrigger");
+        }
+        pirateAutoMove?.MoveToTarget();
     }
 
     private void OnDestroy()
     {
         if (captain != null)
-            captain.OnPirateDeath -= HandleCaptainDeath;
+        {
+            captain.OnDeathAnimationEndEvent -= HandleDeathAnimationEnd;
+        }
     }
 }
+
