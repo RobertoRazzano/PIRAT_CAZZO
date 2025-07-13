@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class CaptainDeathTrigger : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class CaptainDeathTrigger : MonoBehaviour
     [SerializeField] private PirateController captain;
     [SerializeField] private DialogueManagerPonte dialogueManager;
     [SerializeField] private PirateAutoMove pirateAutoMove;
+    private PlayableDirector director;
+    private float delay = 0.5f;
 
     private bool hasTriggered = false;
 
@@ -34,6 +37,12 @@ public class CaptainDeathTrigger : MonoBehaviour
             Debug.LogWarning("❗ DialogueManager non assegnato in CaptainDeathTrigger");
         }
         pirateAutoMove?.MoveToTarget();
+        Invoke(nameof(PlayTimeline), delay);
+    }
+
+    private void PlayTimeline()
+    {
+        director.Play();
     }
 
     private void OnDestroy()
