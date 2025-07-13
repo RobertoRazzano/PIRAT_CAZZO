@@ -256,6 +256,7 @@ public class DocManager : MonoBehaviour
                 {
                     pc.EnterBeingHealed(transform.position, 2f);
                     pc.Heal(recoveryPoints);
+                    
                     //Debug.Log("PirataCurato");
 
                     //VFX HEAL
@@ -305,7 +306,7 @@ public class DocManager : MonoBehaviour
 
             foreach (Collider col in hits)
             {
-                //Debug.Log("Sto cercando pirati");
+                Debug.Log("Sto cercando pirati");
 
                 if (!col.CompareTag("Pirate")) continue;
 

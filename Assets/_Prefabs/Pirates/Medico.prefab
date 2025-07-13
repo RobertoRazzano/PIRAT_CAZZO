@@ -562,8 +562,12 @@ MonoBehaviour:
   - {fileID: 0}
   healRay: 10
   recoveryPoints: 40
+  healVFXPrefab: {fileID: 1247282762272248, guid: 9ab168a77239b3d43be281129b95e8b8, type: 3}
+  healClip: {fileID: 8300000, guid: 79805aff38bd3406d916cf502b72df8f, type: 3}
+  isHealing: 0
   maxHealth: 100
   healthBar: {fileID: 0}
+  healthFill: {fileID: 0}
 --- !u!54 &-7170604822663427171
 Rigidbody:
   m_ObjectHideFlags: 0

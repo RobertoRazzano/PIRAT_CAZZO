@@ -572,6 +572,7 @@ MonoBehaviour:
   ratTransform: {fileID: 0}
   ratManager: {fileID: 0}
   ratHealt: {fileID: 0}
+  minDistanceFromRat: 1
   viewDistance: 10
   viewAngle: 90
   eyeHeight: 1.6
@@ -593,10 +594,12 @@ MonoBehaviour:
   biteTickInterval: 0
   biteDuration: 0
   healthBar: {fileID: 3005356702782041730, guid: be9e5167043d64ea4a47b797b455c818, type: 3}
+  damageVFXPrefab: {fileID: 1639086506678902, guid: 631d19474f303c2438dd37274b631d4c, type: 3}
   infected: 0
   healingCooldown: 5
   alreadyHealing: 0
   healingEndTime: 3
+  deathVFXPrefab: {fileID: 0}
   currentHealth: 0
 --- !u!64 &6156607074417131980
 MeshCollider:

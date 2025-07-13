@@ -140,6 +140,8 @@ public class PirateController : MonoBehaviour
         {
             state = State.Patrol; // Se il ratto è morto, torna in pattugliamento
         }
+
+        
         
         float distanceToRat = Vector3.Distance(transform.position, ratTransform.position);
 
@@ -183,6 +185,12 @@ public class PirateController : MonoBehaviour
         }
     }
 
+    
+
+    [SerializeField] private float patrolWaitTime = 2f;
+    private float waitTimer = 0f;
+    private bool isWaiting = false;
+
     private void PatrolUpdate()
     {
         if (CanSeeRat())
@@ -197,12 +205,31 @@ public class PirateController : MonoBehaviour
             return;
         }
 
+        if (isWaiting)
+        {
+            waitTimer += Time.deltaTime;
+            if (waitTimer >= patrolWaitTime)
+            {
+                isWaiting = false;
+                waitTimer = 0f;
 
+                // Passa al prossimo punto dopo l'attesa
+                patrolIdx = (patrolIdx + 1) % patrolPoints.Length;
+                agent.SetDestination(patrolPoints[patrolIdx].position);
 
+                animator.SetBool("Walk", true); // riparte animazione camminata
+            }
+            return;
+        }
+
+        // Se ha raggiunto il punto ed è fermo, inizia l'attesa
         if (!agent.pathPending && agent.remainingDistance < 0.3f && patrolPoints.Length > 0)
         {
-            patrolIdx = (patrolIdx + 1) % patrolPoints.Length;
-            agent.SetDestination(patrolPoints[patrolIdx].position);
+            isWaiting = true;
+            waitTimer = 0f;
+
+            agent.ResetPath(); // ferma il movimento
+            animator.SetBool("Walk", false); // ferma l’animazione
         }
     }
 
@@ -218,6 +245,7 @@ public class PirateController : MonoBehaviour
         suspicionTimer = 0f;
         suspicionTarget = ratTransform.position;
         hasStartedInvestigating = false;
+
 
         agent.isStopped = true;
         animator.SetBool("isWalking", false);
@@ -461,6 +489,8 @@ public class PirateController : MonoBehaviour
         state = State.BeingHealed;
 
         agent.isStopped = true;
+        agent.updatePosition = false;
+        agent.updateRotation = false;
         animator.SetBool("isWalking", false);
 
         // Ruota verso il medico
@@ -724,6 +754,8 @@ public class PirateController : MonoBehaviour
     public void Heal(int recoveryPoints)
     {
         if (_isDead) return;
+
+        
 
         currentHealth = Mathf.Min(currentHealth + recoveryPoints, maxHealth);
         healthFill.fillAmount = currentHealth / maxHealth;
