@@ -229,20 +229,6 @@ public class PossessionManager : MonoBehaviour
         {
             currentState = PossessionState.Idle;
 
-            // 🎵 Play uscita e stop loop
-            if (oculiRiserSource != null && oculiRiserOut != null)
-            {
-                oculiRiserSource.loop = false;
-                oculiRiserSource.clip = oculiRiserOut;
-                oculiRiserSource.Play();
-            }
-
-            if (oculiAudioSource != null)
-            {
-                oculiAudioSource.Stop();
-                oculiAudioSource.loop = false;
-            }
-
             if (ratInput != null)
             {
                 ratInput.enabled = true;
@@ -281,6 +267,22 @@ public class PossessionManager : MonoBehaviour
 
         currentState = PossessionState.Idle;
         canSwitchBackToRat = false;
+
+        // 🎵 Play uscita e stop loop
+        if (oculiRiserSource != null && oculiRiserOut != null)
+        {
+            oculiRiserSource.loop = false;
+            oculiRiserSource.clip = oculiRiserOut;
+            oculiRiserSource.Play();
+        }
+
+        if (oculiAudioSource != null)
+        {
+            oculiAudioSource.Stop();
+            oculiAudioSource.loop = false;
+        }
+
+
         Invoke(nameof(EnableSwitchBack), 0.2f);
 
         currentState = PossessionState.Idle;
