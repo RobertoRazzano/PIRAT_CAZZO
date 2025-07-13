@@ -63,7 +63,7 @@ public class PauseController : MonoBehaviour
     public void exitToMainMenu()
     {
         Time.timeScale = 1; // Ensure the game is not paused when returning to the main menu
-        SceneManager.LoadScene(4); // Usa l'indice della scena
+        SceneManager.LoadScene(0); // Usa l'indice della scena
     }
 }
 
