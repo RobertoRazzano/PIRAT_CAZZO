@@ -2505,6 +2505,7 @@ MonoBehaviour:
   healingEndTime: 3
   deathVFXPrefab: {fileID: 0}
   currentHealth: 0
+  patrolWaitTime: 2
 --- !u!195 &56587319
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70326,6 +70327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap_Spring
       objectReference: {fileID: 0}
+    - target: {fileID: 6879533389167179289, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7048373314812715366, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.20000005
@@ -73837,6 +73842,7 @@ MonoBehaviour:
   healingEndTime: 3
   deathVFXPrefab: {fileID: 0}
   currentHealth: 0
+  patrolWaitTime: 2
 --- !u!195 &1832333223
 NavMeshAgent:
   m_ObjectHideFlags: 0
