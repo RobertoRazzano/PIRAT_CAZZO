@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap_Glue (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7972748427544381125, guid: 8a49c904666e9e74dafee8bbb7a48c08, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 219657009}
     - target: {fileID: 8757774935842682332, guid: 8a49c904666e9e74dafee8bbb7a48c08, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.93
@@ -642,6 +646,10 @@ PrefabInstance:
       propertyPath: damageVFXPrefab
       value: 
       objectReference: {fileID: 1639086506678902, guid: 631d19474f303c2438dd37274b631d4c, type: 3}
+    - target: {fileID: 7008393099986181157, guid: cd3eff4a19b484dfdabfa0a818d7ada3, type: 3}
+      propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -678,6 +686,42 @@ PrefabInstance:
     - target: {fileID: 1181369537496909975, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.016513115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: oculiVolume
+      value: 
+      objectReference: {fileID: 122645704}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 190578942}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 1700087916}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: defaultColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: defaultColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: defaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: selectedColor.b
+      value: 0.4244516
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: selectedColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434297207494486838, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
+      propertyPath: selectedColor.r
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4574795914097365708, guid: 8dcdb9da92a0a734a902f6c2632af3e1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1087,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap_Glue
       objectReference: {fileID: 0}
+    - target: {fileID: 7972748427544381125, guid: 8a49c904666e9e74dafee8bbb7a48c08, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 219657009}
     - target: {fileID: 8757774935842682332, guid: 8a49c904666e9e74dafee8bbb7a48c08, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.93
@@ -1953,6 +2001,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 940666761}
     m_Modifications:
+    - target: {fileID: 6812511087146224718, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 219657009}
     - target: {fileID: 6879533389167179289, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
       propertyPath: m_Name
       value: Trap_Spring (2)
@@ -2950,6 +3002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap_Glue (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7972748427544381125, guid: 8a49c904666e9e74dafee8bbb7a48c08, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 219657009}
     - target: {fileID: 8757774935842682332, guid: 8a49c904666e9e74dafee8bbb7a48c08, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.93
@@ -5388,6 +5444,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 940666761}
     m_Modifications:
+    - target: {fileID: 6812511087146224718, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 219657009}
     - target: {fileID: 6879533389167179289, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
       propertyPath: m_Name
       value: Trap_Spring (1)
@@ -5568,6 +5628,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 940666761}
     m_Modifications:
+    - target: {fileID: 6812511087146224718, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
+      propertyPath: promptUIManager
+      value: 
+      objectReference: {fileID: 219657009}
     - target: {fileID: 6879533389167179289, guid: bf837d53472ef7740b8a76828142eaf5, type: 3}
       propertyPath: m_Name
       value: Trap_Spring
